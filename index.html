@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Logo -->
+        <h1><a href="#banner">Kevin's CheatSheet</a></h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#table">List</a></li>
+                <li><a href="#position">Position</a></li>
+                <li><a href="#display">Display</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <div id="banner">
+            <p class="big">CheatSheet</p>
+            <div class="bannerline"></div>
+            <p class="small">Position & Display</p>
+        </div>
+            <!--List Table-->
+            <div id="table">
+                <div class="title">
+                    <h1>List</h1>
+                    <div class="line"></div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Display</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Relative</td>
+                            <td>Inline</td>
+                        </tr>
+                        <tr>
+                            <td>Absolute</td>
+                            <td>Block</td>
+                        </tr>
+                        <tr>
+                            <td>Fixed</td>
+                            <td>Inline-Block</td>
+                        </tr>
+                        <tr>
+                            <td>Sticky</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>       
+        <!-- Position -->
+        <div id='position' class="material">
+            <div class="title">
+                <h1>Position</h1>
+                <div class="line"></div>
+            </div>
+            <div class="content">
+                <!-- Relative -->
+                <div class="relative">
+                    <h2>Relative</h2>
+                    <div class="contentline"></div>
+                    <p>Allows you to position an element relative to its default static position on the web page</p>
+                    <img class="right" src="./resources/images/relative.png" alt="code">
+                    <p>Need to accompany the position declaration with (Will not work if the element’s position property is the default static)</p>
+                    <ul>
+                        <li>top</li>
+                        <ul>
+                            <li>Moves the element down from the top</li>
+                        </ul>
+                        <li>bottom</li>
+                        <ul>
+                            <li>Moves the element up from the bottom</li>
+                        </ul>
+                        <li>left</li>
+                        <ul>
+                            <li>Moves the element away from the left side (to the right)</li>
+                        </ul>
+                        <li>right</li>
+                        <ul>
+                            <li>Moves the element away from the right side (to the left)</li>
+                        </ul>
+                    </ul>
+                    <img class="left" src="./resources/images/relative2.png" alt="code">
+                </div>
+
+                <!-- Absolute -->
+                <div class="absolute">
+                    <h2>Absolute</h2>
+                    <div class="contentline"></div>
+                    <p>When an element’s position is set to absolute</p>
+                    <ul>
+                        <li>All other elements on the page will ignore the element and act like it is not present on the page</li>
+                        <li>The element will be positioned relative to its closest positioned parent element</li>
+                        <li>Offset properties can be used to determine the final position from there</li>
+                    </ul>
+                </div>
+
+                <!-- Fixed -->
+                <div class="fixed">
+                    <h2>Fixed</h2>
+                    <div class="contentline"></div>
+                    <p>Fix an element to a specific position on the page (regardless of user scrolling)</p>
+                    <p>Often used for navigation bars on a web page</p>
+                    <img class="right" src="./resources/images/fixed.png" alt="code">
+                </div>
+
+                <!-- Sticky -->
+                <div class="sticky">
+                    <h2>Sticky</h2>
+                    <div class="contentline"></div>
+                    <p>Keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further</p>
+                    <img class= "left"src="./resources/images/sticky.png" alt="code">
+                    <p>.box-botttom will remain in its relative position, and scroll as usual</p>
+                    <ul>
+                        <li>When it reaches 240 pixels from the top, it will stick to that position until it reaches the bottom of its container where it will “unstick” and rejoin the flow of the document</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Display -->
+        <div id='display' class="material">
+            <div class="title">
+                <h1>Display</h1>
+                <div class="line"></div>
+            </div>
+            <div class="content">
+                <!--Inline-->
+                <div class="inline">
+                    <h2>Inline</h2>
+                    <div class="contentline"></div>
+                    <p>Provides the ability to make any element an inline element</p>
+                    <p>Default display value</p>
+                    <ul>
+                        <li>Dictates if it can share horizontal spaces with other elements</li>
+                        <li>Some elements fill the entire browser from the left to right regardless of the size of their content</li>
+                        <li>Other elements only take up as much horizontal space as their content requires and can be directly next to other elements</li>
+                    </ul>
+                    <p>Three values for the display property</p>
+                    <ul>
+                        <li>inline</li>
+                        <li>block</li>
+                        <li>inline-block</li>
+                    </ul>
+                    <p>Default display for some elements, such as &lt;em&gt;, &lt;strong&gt;, and &lt;a&gt; is called inline</p>
+                    <ul>
+                        <li>Inline elements have a box that wraps tightly around the content, only taking up the amount of space necessary to display their content and not requiring a new line after each element.</li>
+                        <li>Height and width of these elements cannot be specified (Cannot be altered in size)</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content">Documentation</a></li>
+                    </ul>
+                    <img class="right" src="./resources/images/inline.png" alt="code">
+                    <p>Browser will render &lt;h1&gt; elements on the same line as other inline elements immediately before or after them (if there are any)</p>
+                </div>
+                <!--Block-->
+                <div class="block">
+                    <h2>Block</h2>
+                    <div class="contentline"></div>
+                    <p>Block-level elements</p>
+                    <ul>
+                        <li>Fill the entire width of the page by default</li>
+                        <ul>
+                            <li>Width property can be set</li>
+                            <li>By default include all levels of heading elements (h1 - h6), &lt;p&gt;, &lt;div&gt;, and &lt;footer&gt;&lt;/footer&gt;&lt;/li&gt;
+                        </ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content">Documentation</a></li>
+                    </ul>
+                    <img class="left" src="./resources/images/block.png" alt="code">
+                </div>
+                <!--Inline Block-->
+                <div class="inlineblock">
+                    <h2>Inline Block</h2>
+                    <div class="contentline"></div>
+                    <p>Combines features of both inline and block elements</p>
+                    <p>Can appear next to each other and we can specify their dimensions using the width and height properties</p>
+                    <p>Default Elements</p>
+                    <ul>
+                        <li>Images</li>
+                    </ul>
+                    <img class="inlineblockcode right" src="./resources/images/inlineblock.png" alt="code">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright @2023 | Designed by Kevin Lo</p>
+    </footer>
+</body>
+</html>
